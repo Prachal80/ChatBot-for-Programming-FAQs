@@ -1,0 +1,423 @@
+What kind of variables a class can consist of?
+A class consist of Local variable, instance variables and class variables.
+
+What is a Local Variable?
+Variables defined inside methods, constructors or blocks are called local variables.                                                                The variable will be declared and initialized within the method  and it will be destroyed when the method has completed.
+
+What is a Instance Variable?
+Instance variables are variables within a class but outside any method. 
+
+What is a Class Variable?
+These are variables declared with in a class, outside any method, with the static keyword.
+
+What is Singleton class?
+Singleton class control object creation, limiting the number to one but allowing the flexibility to create more objects if the situation changes.
+
+What do you mean by Constructor?
+Constructor gets invoked when a new object is created. Every class has a constructor. 
+
+List the three steps for creating an Object for a class?
+An Object is first declared, then instantiated and then it is initialized.
+
+What is the default value of byte datatype in Java?
+Default value of byte datatype is 0.
+
+What is the default value of float and double datatype in Java?
+Default value of float and double datatype in different as compared to C/C++. For float its 0.0f and for double it’s 0.0d
+
+When a byte datatype is used?
+This data type is used to save space in large arrays, mainly in place of integers, since a byte is four times smaller than an int.
+
+What is a static variable?
+Class variables also known as static variables are declared with the static keyword in a class, but outside a method, constructor or a block.
+
+What do you mean by Access Modifier?
+Java provides access modifiers to set access levels for classes, variables, methods and constructors. 
+
+What is protected access modifier?
+Variables, methods and constructors which are declared protected in a superclass can be accessed only by the subclasses in other package or any class. within the package of the protected
+members' class.
+
+What do you mean by synchronized Non Access Modifier?
+Java provides these modifiers for providing functionalities other than Access Modifiers, synchronized used to indicate that a method can be accessed by only one thread at a time.
+
+
+According to Java Operator precedence, which operator is considered to be with highest precedence?
+Postfix operators i.e  [] . is at the highest precedence.
+
+Variables used in a switch statement can be used with which datatypes?
+Variables used in a switch statement can only be a byte, short, int, or char.
+
+When parseInt method can be used?
+This method is used to get the primitive data type of a certain String.
+
+Why is String class considered immutable?
+The String class is immutable, so that once it is created a String object cannot be changed. 
+Since String is immutable it can safely be shared between many threads ,which is considered very
+important for multithreaded programming.
+
+Why is StringBuffer called mutable?
+The String class is considered as immutable, so that once it is created a String object cannot be changed. 
+If there is a necessity to make alot of modifications to Strings of characters then
+StringBuffer should be used.
+
+What is the difference between StringBuffer and StringBuilder class?
+Use StringBuilder whenever possible because it is faster than StringBuffer. But, if thread safety is necessary then use StringBuffer objects.
+
+Which package is used for pattern matching with regular expressions?
+java.util.regex package is used for this purpose.
+
+java.util.regex consists of which classes?
+java.util.regex consists of three classes − Pattern class, Matcher class and PatternSyntaxException class.
+
+What is finalize method?
+It is possible to define a method that will be called just before an object's final destruction by the garbage collector.
+ This method is called finalize
+, and it can be used to ensure that an object
+terminates cleanly.
+
+
+What is an Exception?
+An exception is a problem that arises during the execution of a program.
+Exceptions are caught by handlers positioned along the thread's method invocation stack.
+
+What do you mean by Checked Exceptions?
+It is an exception that is typically a user error or a problem that cannot be foreseen by theprogrammer.
+For example, if a file is to be opened, but the file cannot be found, an exception
+occurs. These exceptions cannot simply be ignored at the time of compilation.
+
+Explain Runtime Exceptions?
+It is an exception that occurs that probably could have been avoided by the programmer.
+As opposed to checked exceptions, runtime exceptions are ignored at the time of compliation.
+
+
+Which are the two subclasses under Exception class?
+The Exception class has two main subclasses : IOException class and RuntimeException Class.
+
+When throws keyword is used?
+If a method does not handle a checked exception, the method must declare it using the throwskeyword. 
+The throws keyword appears at the end of a method's signature.
+
+When throw keyword is used?
+An exception can be thrown, either a newly instantiated one or an exception that you just caught,by using throw keyword.
+
+How finally used under Exception Handling?
+The finally keyword is used to create a block of code that follows a try block. 
+A finally block of code always executes, whether or not an exception has occurred.
+
+What things should be kept in mind while creating your own exceptions in Java?
+While creating your own exception −All exceptions must be a child of Throwable.
+If you want to write a checked exception that is automatically enforced by the Handle or
+Declare Rule, you need to extend the Exception class.
+You want to write a runtime exception, you need to extend the RuntimeException class.
+
+Define Inheritance?
+It is the process where one object acquires the properties of another. With the use of inheritance the information is in a hierarchical order.
+
+When super keyword is used?
+If the method overrides one of its superclass's methods, overridden method can be invoked
+through the use of the keyword super. It can be also used to refer to a hidden field.
+
+What is Polymorphism?
+Polymorphism is the ability of an object to take on many forms. 
+The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+What is Abstraction?
+It refers to the ability to make a class abstract in OOP. 
+It helps to reduce the complexity and also improves the maintainability of the system.
+
+What is Abstract class?
+These classes cannot be instantiated and are either partially implemented or not at all implemented. 
+This class contains one or more abstract methods which are simply method
+declarations without a body.
+
+When Abstract methods are used?
+If you want a class to contain a particular method but you want the actual implementation of that method to be determined by child classes.
+you can declare the method in the parent class as
+abstract.
+
+What is Encapsulation?
+It is the technique of making the fields in a class private and providing access to the fields via public methods.
+If a field is declared private, it cannot be accessed by anyone outside the class,
+thereby hiding the fields within the class. Therefore encapsulation is also referred to as data
+hiding.
+
+What is the primary benefit of Encapsulation?
+The main benefit of encapsulation is the ability to modify our implemented code without breaking the code of others who use our code.
+With this Encapsulation gives maintainability, flexibility and
+extensibility to our code.
+
+What is an Interface?
+An interface is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
+
+Give some features of Interface?
+It includes −Interface cannot be instantiated −All of the methods in an interface are abstract.
+
+An applet extend which class?
+An applet extends java.applet.Applet class.
+
+Explain garbage collection in Java?
+It uses garbage collection to free the memory. By cleaning those objects that is no longer reference by any of the program.
+
+Define immutable object?
+An immutable object can’t be changed once it is created.
+
+Explain the usage of this with constructors?
+It is used with variables or methods and used to call constructer of same class.
+
+Explain Set Interface?
+It is a collection of element which cannot contain duplicate elements.
+The Set interface contains only methods inherited from Collection and adds the restriction that duplicate elements are
+prohibited.
+
+Explain TreeSet?
+It is a Set implemented when we want elements in a sorted order.
+
+What is Comparable Interface?
+It is used to sort collections and arrays of objects using the collections.sort and java.utils.
+The objects of the class implementing the Comparable interface can be ordered.
+
+What is a WAR file?
+This is Web Archive File and used to store XML, java classes, and JavaServer pages. which is usedto distribute a collection of JavaServer Pages.
+Java Servlets, Java classes, XML files, static Web
+pages etc.
+
+Define JIT compiler?
+It improves the runtime performance of computer programs based on bytecode.
+
+
+
+
+
+#############################################################################################################################################
+
+
+
+What is Python? What are the benefits of using Python?
+
+Python is a programming language with objects, modules, threads, exceptions and automatic memory management. 
+The benefits of pythons are that it is simple and easy, portable, extensible, build-in data structure and it is an open source.
+
+What is PEP 8?
+PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.
+
+What is pickling and unpickling?
+Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function.
+
+How Python is interpreted?
+
+Python language is an interpreted language. Python program runs directly from the source code.
+It converts the source code that is written by the programmer into an intermediate language, which is again translated into machine language that has to be executed.
+
+How memory is managed in Python?
+Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. 
+
+
+What are the tools that help to find bugs or perform static analysis?
+
+PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug.
+
+What are Python decorators?
+A Python decorator is a specific change that we make in Python syntax to alter functions easily.
+
+What is the difference between list and tuple?
+The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed for e.g as a key for dictionaries.
+
+How are arguments passed by value or by reference?
+Everything in Python is an object and all variables hold references to the objects.
+
+What is Dict and List comprehensions are?
+They are syntax constructions to ease the creation of a Dictionary or List based on existing iterable.
+
+What are the built-in type does python provides?
+Mutable built-in types  *Lists *Sets *Dictionaries. Immutable built-in types *Strings *Tuples *Numbers
+
+What is namespace in Python?
+In Python, every name introduced has a place where it lives and can be hooked for. This is known as namespace. 
+
+
+What is lambda in Python?
+It is a single expression anonymous function often used as inline function.
+
+Why lambda forms in python does not have statements?
+A lambda form in python does not have statements as it is used to make new function object and then return them at runtime.
+
+What is pass in Python?
+Pass means, no-operation Python statement, or in other words it is a place holder in compound statement, where there should be a blank left.
+
+In Python what are iterators?
+In Python, iterators are used to iterate a group of elements, containers like list.
+
+What is unittest in Python?
+A unit testing framework in Python is known as unittest.  It supports sharing of setups, automation testing, shutdown code for tests.
+
+In Python what is slicing?
+A mechanism to select a range of items from sequence types like list, tuple, strings etc. is known as slicing.
+
+What are generators in Python?
+The way of implementing iterators are known as generators.  It is a normal function except that it yields expression in the function.
+
+What is docstring in Python?
+
+A Python documentation string is known as docstring, it is a way of documenting Python functions, modules and classes.
+
+How can you copy an object in Python?
+To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.
+
+What is negative index in Python?
+Python sequences can be index in positive and negative numbers.   For positive index, 0 is the first index, 1 is the second index and so forth.
+For negative index, (-1) is the last index and (-2) is the second last index and so forth.
+
+How you can convert a number to a string?
+
+In order to convert a number into a string, use the inbuilt function str().If you want a octal or hexadecimal representation,use the inbuilt function oct() or hex().
+
+What is the difference between Xrange and range?
+Xrange returns the xrange object while range returns the list, and uses the same memory and no matter what the range size is.
+
+What is module and package in Python?
+In Python, module is the way to structure program. Each Python program file is a module, which imports other modules like objects and attributes.
+The folder of Python program is a package of modules.  A package can have modules or subfolders.
+
+Mention what are the rules for local variables in Python?
+Local variables: If a variable is assigned a new value anywhere within the function’s body, it’s assumed to be local.
+
+Mention what are the rules for Global variables in Python?
+Global variables: Those variables that are only referenced inside a function are implicitly global.
+
+How can you share global variables across modules?
+To share global variables across modules within a single program, create a special module.Import the config module in all modules of your application. The module will be available as a global variable across modules.
+
+Explain how can you make a Python Script executable on Unix?
+"To make a Python Script executable on Unix, you need to do two things,Script file’s mode must be executable and the first line must begin with # ( #!/usr/local/bin/python)"
+
+Explain how to delete a file in Python?
+
+By using a command os.remove (filename) or os.unlink(filename)
+
+Explain how can you generate random numbers in Python?
+
+To generate random numbers in Python, you need to import command as
+
+import random
+
+random.random()
+
+This returns a random floating point number in the range [0,1)
+
+Explain how can you access a module written in Python from C?
+
+You can access a module written in Python from C by following method,
+
+Module =  =PyImport_ImportModule(“<modulename>”);
+
+Mention the use of // operator in Python?
+
+It is a Floor Divisionoperator , which is used for dividing two operands with the result as quotient showing only digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
+
+Mention five benefits of using Python?
+
+    Python comprises of a huge standard library for most Internet platforms like Email, HTML, etc.
+    Python does not require explicit memory management as the interpreter itself allocates the memory to new variables and free them automatically
+    Provide easy readability due to use of square brackets
+    Easy-to-learn for beginners
+    Having the built-in data types saves programming time and effort from declaring variables
+
+Mention the use of the split function in Python?
+
+The use of the split function in Python is that it breaks a string into shorter strings using the defined separator. It gives a list of all words present in the string.
+
+Explain what is Flask & its benefits?
+
+Flask is a web micro framework for Python based on “Werkzeug, Jinja 2 and good intentions” BSD licensed. Werkzeug and jingja are two of its dependencies.
+
+Flask is part of the micro-framework. Which means it will have little to no dependencies on external libraries.  It makes the framework light while there is little dependency to update and less security bugs.
+
+Mention what is the difference between Django, Pyramid, and Flask?
+
+Flask is a “microframework” primarily build for a small application with simpler requirements.  In flask, you have to use external libraries.  Flask is ready to use.
+
+Pyramid are build for larger applications.  It provides flexibility and lets the developer use the right tools for their project. The developer can choose the database, URL structure, templating style and more. Pyramid is heavy configurable.
+
+Like Pyramid, Django can also used for larger applications.  It includes an ORM.
+
+ 
+
+Mention what is Flask-WTF and what are their features?
+Flask-WTF offers simple integration with WTForms.  Features include for Flask WTF are
+
+    Integration with wtforms
+    Secure form with csrf token
+    Global csrf protection
+    Internationalization integration
+    Recaptcha supporting
+    File upload that works with Flask Uploads
+
+Explain what is the common way for the Flask script to work?
+
+The common way for the flask script to work is it should be the import path for your application Or the path to a Python file
+   
+
+ 
+
+Explain how you can access sessions in Flask?
+
+A session basically allows you to remember information from one request to another. 
+In a flask, it uses a signed cookie so the user can look at the session contents and modify. The user can modify the session if only it has the secret key Flask.secret_key.
+
+
+Explain database connection in Python Flask?
+
+Flask supports database powered application.Such system requires creating a schema, which requires piping the shema.sql file into a sqlite3 command.  So you need to install sqlite3 command in order to create or initiate the database in Flask.
+
+Flask allows to request database in three ways
+
+    before_request() : They are called before a request and pass no arguments
+    after_request() : They are called after a request and pass the response that will be sent to the client
+    teardown_request(): They are called in situation when exception is raised, and response are not guaranteed. They are called after the response been constructed.  They are not allowed to modify the request, and their values are ignored.
+
+
+
+Explain how you can minimize the Memcached server outages in your Python Development?
+•  Another way is to bring up an instance of Memcached on a new machine using the lost machines IP address
+•  When one instance fails, several of them goes down, this will put larger load on the database server when lost data is reloaded as client make a request. To avoid this, if your code has been written to minimize cache stampedes then it will leave a minimal impact
+
+•  Code is another option to minimize server outages as it gives you the liberty to change the Memcached server list with minimal work
+•  Setting timeout value is another option that some Memcached clients implement for Memcached server outage. When your Memcached server goes down, the client will keep trying to send a request till the time-out limit is reached
+
+Explain what is Dogpile effect? How can you prevent this effect?
+
+Dogpile effect is referred to the event when cache expires, and websites are hit by the multiple requests made by the client at the same time.
+ This effect can be prevented by using semaphore lock. In this system when value expires, first process acquires the lock and starts generating new value.
+
+Explain how Memcached should not be used in your Python project?
+
+•  Memcached common misuse is to use it as a data store, and not as a cache
+•  Never use Memcached as the only source of the information you need to run your application. Data should always be available through another source as well
+•  Memcached is just a key or value store and cannot perform query over the data or iterate over the contents to extract information
+•  Memcached does not offer any form of security either in encryption or authentication
+
+
+
+How do we interpret Python?
+The source code that the programmer writes converted into language that is then translated into a language that needs to be executed by a machine.
+Python language is an interpreted language. The program runs directly from the source code and converts 
+
+What is a Python decorator?
+
+A Python decorator is a specific change that is made in Python syntax to effortlessly modify functions.
+
+What is the difference between list and tuple?
+
+While list is mutable, tuple is not. One can hash tuple, for instance, as a key for dictionaries.
+
+What are Dict and List Comprehensions?
+
+These are syntax constructions that help to simplify the creation of a dictionary or list based on iterable that already exists.
+
+What is Lambda in Python?
+
+Lambda is a single expression anonymous function that is mostly used as inline function.
+
+
+
